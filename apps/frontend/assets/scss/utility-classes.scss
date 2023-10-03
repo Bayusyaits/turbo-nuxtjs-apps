@@ -1,0 +1,12 @@
+.hover-underline {
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}
+
+.hide-mobile {
+	@include mq($until: tablet) {
+		display: none !important;
+	}
+}

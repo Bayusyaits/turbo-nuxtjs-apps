@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Nuxt.js",
+  "extends": "./base.json",
+  "include": [
+		"env.d.ts",
+		"**/*",
+		"**/*.vue",
+		"**/*.d.ts",
+		"./.nuxt/nuxt.d.ts"
+	],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": [
+			"node", 
+			"@nuxt/types", 
+			"@nuxtjs/i18n",
+			"@vite-pwa/nuxt",
+			"@pinia/nuxt",
+			"@vueuse/nuxt"
+		]
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}

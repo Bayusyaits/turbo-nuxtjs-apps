@@ -1,0 +1,15 @@
+{
+  "name": "backend-mock-api",
+  "version": "1.0.0",
+  "description": "Model Management front end challenge",
+  "main": "index.js",
+  "repository": "https://bitbucket.org/cityscout/front-end-challenge/src/master/",
+  "author": "Model Management",
+  "license": "MIT",
+  "scripts": {
+    "dev": "json-server db.json --port 8080"
+  },
+  "dependencies": {
+    "json-server": "^0.14.2"
+  }
+}
